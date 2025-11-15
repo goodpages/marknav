@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv='x-dns-prefetch-control' content='on'>
+
+
+
+<link rel="preconnect" href="https://lf6-cdn-tos.bytecdntp.com" crossorigin>
+<link rel="dns-prefetch" href="https://lf6-cdn-tos.bytecdntp.com">
+<link href="/js/config.js" as="script">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人书签</title>
+<meta name="keywords" content="个人书签">
+<meta name="description" content="我的个人书签">
+<link rel="shortcut icon" href="/images/logo.png">
+
+<!-- / FB Open Graph -->
+<meta property="og:title" content="个人书签">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mark.jihe.ren/">
+<meta property="og:description" content="我的个人书签">
+
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+
+
+  <script defer src="/js/smoothscroll.min.js"></script>
+
+
+<script defer src="/js/app.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  
+<script src="/js/config.js"></script>
+
+  <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="svg-tag" viewBox="0 0 32 32">
+    <path d="M31.391,13.88l-5-8C25.661,4.711,24.379,4,23,4H4C1.791,4,0,5.791,0,8v16c0,2.209,1.791,4,4,4h19    c1.379,0,2.66-0.711,3.391-1.881l5-8C32.203,16.824,32.203,15.177,31.391,13.88z M29.695,17.059l-5,8.002    C24.328,25.649,23.693,26,23,26H4c-1.103,0-2-0.898-2-2V8c0-1.103,0.897-2,2-2h19c0.693,0,1.328,0.352,1.695,0.939l5,8C30.098,15.584,30.098,16.416,29.695,17.059z"/>
+    <path d="M23,13c-1.658,0-3,1.343-3,3s1.342,3,3,3c1.656,0,3-1.344,3-3C26,14.343,24.656,13,23,13z     M23,18.001c-1.105,0-2-0.896-2-2s0.895-2,2-2c1.104,0,2,0.896,2,2C25,17.104,24.104,18.001,23,18.001z"/>
+  </symbol>
+</svg>
+  <div id="backdrop"></div>
+
+  <div class="sidebar-menu">
+  <div class="logo flex-v-center h-center">
+    <a href="/">
+      <img src="/images/logo.png" class="logo-expanded" style="border-radius:40px;" width="40"/>
+      <img src="/images/logo.png" class="logo-collapsed" style="border-radius:40px;" width="40"/>
+    </a>
+  </div>
+
+  <ul id="main-menu" class="main-menu">
+    <li class="has-sub">
+          <a class="fas fa-angle-right">
+            <i class="menu-icon far fa-star"></i><span class="menu-title">开源情报</span>
+          </a>
+          <ul>
+        <li>
+          <a href="/#osint" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">综合</span>
+          </a>
+        </li><li>
+          <a href="/#oibasedb" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">基础数据集</span>
+          </a>
+        </li><li>
+          <a href="/#oiatools" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">分析工具</span>
+          </a>
+        </li><li>
+          <a href="/#oilocate" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">地理追踪定位</span>
+          </a>
+        </li><li>
+          <a href="/#oimulti" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">多维度情报源</span>
+          </a>
+        </li><li>
+          <a href="/#oisocial" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">社交媒体情报</span>
+          </a>
+        </li><li>
+          <a href="/#oibusiness" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">企业人员信息</span>
+          </a>
+        </li><li>
+          <a href="/#artthreat" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">威胁情报源</span>
+          </a>
+        </li><li>
+          <a href="/#oiapt" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">APT威胁情报</span>
+          </a>
+        </li><li>
+          <a href="/#oiapt" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">密码泄露查询</span>
+          </a>
+        </li><li>
+          <a href="/#oiverify" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">核查与验证</span>
+          </a>
+        </li><li>
+          <a href="/#oiimage" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">图像搜索</span>
+          </a>
+        </li><li>
+          <a href="/#oipub" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">公共记录查询</span>
+          </a>
+        </li><li>
+          <a href="/#oisearch" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">搜索引擎</span>
+          </a>
+        </li><li>
+          <a href="/#oitraffic" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">交通运输情报</span>
+          </a>
+        </li><li>
+          <a href="/#oinssa" role="anchor">
+            <i class="menu-icon fas fa-paint-brush"></i><span class="menu-title">态势感知</span>
+          </a>
+        </li></ul></li><li>
+          <a href="/#secure" role="anchor">
+            <i class="menu-icon fas fa-bug"></i><span class="menu-title">安全</span>
+          </a>
+        </li><li>
+          <a href="/#blog" role="anchor">
+            <i class="menu-icon fas fa-rss"></i><span class="menu-title">个人博客</span>
+          </a>
+        </li><li>
+          <a href="/#video" role="anchor">
+            <i class="menu-icon fas fa-film"></i><span class="menu-title">放松一下</span>
+          </a>
+        </li>
+
+  </ul>
+</div>
+
+
+  <div class="main-content">
+    <header>
+  <div class="banner mobile-banner">
+    <a href="/" class="btn mobile-logo">
+      <img src="/images/logo.png" style="border-radius:40px;" width="40"/>
+    </a>
+
+    <div class="btn show-setting-banner">
+      <i class="fas fa-cog"></i>
+    </div>
+
+    <div class="btn sidebar-mobile">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+
+  <div class="banner setting-banner mobile-hidden">
+    <div class="btn sidebar-collapse">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="btn theme-switcher dropdown flex-v-center">
+      <span class="lable"><i></i></span>
+      <ul class="dropdown-menu">
+        <li value="auto"><i class="fas fa-adjust"></i>跟随系统</li>
+        <li value="light"><i class="fas fa-sun"></i>浅色</li>
+        <li value="dark"><i class="far fa-moon"></i>深色</li>
+      </ul>
+    </div>
+  </div>
+</header>
+    
+<main class="content">
+  
+    
+  <h4 id="osint" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>综合
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://osintguide.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">osintguide</strong>
+            <span class="description"></span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.osint-jobs.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">osint-jobs</strong>
+            <span class="description"></span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oibasedb" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>基础数据集
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/BuzzFeedNews">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">BuzzFeedNews数据集</strong>
+            <span class="description">收集整理的各类网络数据集</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.start.umd.edu/gtd/">
+          <img class="lozad" data-src="https://www.start.umd.edu/sites/default/files/favicon_0.ico">
+          <div>
+            <strong class="title">全球恐怖主义数据库(GTD)</strong>
+            <span class="description">全球恐怖主义事件权威数据库</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://data.mendeley.com/">
+          <img class="lozad" data-src="https://static.data.mendeley.com/favicon.ico">
+          <div>
+            <strong class="title">Mendeley Data</strong>
+            <span class="description">大型学术数据集存储库，覆盖广泛学科</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://snap.stanford.edu/data/">
+          <img class="lozad" data-src="https://snap.stanford.edu/favicon.ico">
+          <div>
+            <strong class="title">斯坦福网络分析项目(SNAP)</strong>
+            <span class="description">提供社交网络、互联网拓扑、人口统计等公开数据集</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://opendata.rapid7.com/">
+          <img class="lozad" data-src="https://www.rapid7.com/includes/img/favicon.ico">
+          <div>
+            <strong class="title">Rapid7 OpenData</strong>
+            <span class="description">DNS、SSL证书、端口扫描（Sonar项目）等互联网扫描数据集，价值极高</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://s3.amazonaws.com/alexa-static/top-1m.csv.zip">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">Alexa Top 1M</strong>
+            <span class="description">全球网站流量排名前100万列表</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.tianyancha.com/">
+          <img class="lozad" data-src="https://www.tianyancha.com/favicon.ico">
+          <div>
+            <strong class="title">天眼查</strong>
+            <span class="description">中国公司工商信息、股权关系、风险查询</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://opencorporates.com/">
+          <img class="lozad" data-src="https://opencorporates.com/favicon.ico">
+          <div>
+            <strong class="title">OpenCorporates</strong>
+            <span class="description">全球公司注册信息数据库（国际版“天眼查”）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://dingba.top/qqzk">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">全球智库导航</strong>
+            <span class="description">汇集全球主要智库链接</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://dingba.top/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">丁爸情报资源导航</strong>
+            <span class="description">国内知名OSINT文章、工具、资源汇总站点</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://osintcurio.us">
+          <img class="lozad" data-src="/images/favicon/osintcurio.png">
+          <div>
+            <strong class="title">OSINTcurio.us</strong>
+            <span class="description">荷兰开源情报分析师博客，提供见解和资源</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://osintframework.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">OSINT Framework</strong>
+            <span class="description">结构化OSINT搜索框架与工具链集合</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://start.me/p/ZME8nR/osint">
+          <img class="lozad" data-src="/images/favicon/startme.me">
+          <div>
+            <strong class="title">OSINT 聚合页面</strong>
+            <span class="description">精心组织的OSINT资源起始页</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.i-intelligence.eu/wp-content/uploads/2018/06/OSINT_Handbook_June-2018_Final.pdf">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">OSINT Handbook (2018)</strong>
+            <span class="description">情报组织编写的OSINT资源与工具手册</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://fas.org/irp/doddir/army/fmi2-22-9.pdf">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">美国陆军开源情报手册 (FMI 2-22.9)</strong>
+            <span class="description">涵盖OSINT特征、组织、流程、类别等</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://fas.org/irp/doddir/army/atp2-22-9.pdf">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">美国陆军开源情报技术出版物 (ATP 2-22.9)</strong>
+            <span class="description">2012版陆军OSINT技术指南</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oiatools" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>分析工具
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://pandas.pydata.org/">
+          <img class="lozad" data-src="https://pandas.pydata.org/static/img/favicon.ico">
+          <div>
+            <strong class="title">pandas</strong>
+            <span class="description">Python数据分析核心库，处理结构化数据的利器</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/r0f1/datascience">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Data Science 资源推荐</strong>
+            <span class="description">大数据分析相关功能库集合</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/Xyntax/slides/">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">安全数据分析幻灯片</strong>
+            <span class="description">涵盖安全数据分析、DNS恶意流量分析、威胁防御等主题</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/mannirulz/BotDAD">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">BotDAD</strong>
+            <span class="description">利用DNS流量进行异常检测的僵尸网络发现工具（Python 2）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/lion-gu/ioc-explorer">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">IOC Explorer</strong>
+            <span class="description">从多数据源自动关联探索威胁指标(IOC)（Python）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/Te-k/harpoon">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Harpoon</strong>
+            <span class="description">基于OSINT的命令行威胁情报工具（Python）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.maltego.com/">
+          <img class="lozad" data-src="https://www.maltego.com/favicon.ico">
+          <div>
+            <strong class="title">Maltego</strong>
+            <span class="description">一款强大的开源情报与数据挖掘工具，擅长可视化关联分析各类信息，广泛应用于网络安全与调查领域</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.spiderfoot.net/">
+          <img class="lozad" data-src="https://www.spiderfoot.net/favicon.ico">
+          <div>
+            <strong class="title">Spiderfoot</strong>
+            <span class="description">一款自动化的开源情报收集工具，可整合数百个数据源，全面挖掘目标相关信息</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.shodan.io/">
+          <img class="lozad" data-src="/images/favicon/shodan.png">
+          <div>
+            <strong class="title">Shodan</strong>
+            <span class="description">被称为“互联网搜索引擎”，专注于搜索联网设备及其开放端口、服务等信息，是网络安全领域重要工具</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://babelx.io/">
+          <img class="lozad" data-src="https://babelx.io/favicon.ico">
+          <div>
+            <strong class="title">Babel X</strong>
+            <span class="description">一款专注于多语言翻译与跨语言信息挖掘的工具，助力开源情报工作中的多语言数据处理</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.metasploit.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">Metasploit</strong>
+            <span class="description">一款知名的渗透测试框架，集成了漏洞利用模块、 payload 等功能，广泛应用于网络安全评估</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oilocate" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>地理追踪定位
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://dev.maxmind.com/geoip/geoip2/geolite2/">
+          <img class="lozad" data-src="https://dev.maxmind.com/favicon.ico">
+          <div>
+            <strong class="title">MaxMind GeoLite2</strong>
+            <span class="description">免费IP地理位置数据库 (IPv4/IPv6)</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://developers.google.com/maps/documentation/geolocation/intro">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">Google Maps Geolocation API</strong>
+            <span class="description">利用WiFi接入点和基站信息进行定位的API</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.ipip.net/">
+          <img class="lozad" data-src="https://www.ipip.net/favicon.ico">
+          <div>
+            <strong class="title">IPIP.net</strong>
+            <span class="description">提供IP地理位置查询 (含付费服务)</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.ipplus360.com/">
+          <img class="lozad" data-src="https://www.ipplus360.com/img/logo21.ico">
+          <div>
+            <strong class="title">IPPlus360</strong>
+            <span class="description">提供IPv4/IPv6地址库查询 (含付费服务)</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://opencellid.org/">
+          <img class="lozad" data-src="https://opencellid.org/images/favicon.ico">
+          <div>
+            <strong class="title">OpenCellID</strong>
+            <span class="description">全球最大的开源手机基站地理位置数据库</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://cellphonetrackers.org/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">手机追踪器</strong>
+            <span class="description">提供基于基站信息的定位服务</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.suncalc.org/">
+          <img class="lozad" data-src="https://www.suncalc.org/favicon.ico">
+          <div>
+            <strong class="title">SunCalc</strong>
+            <span class="description">根据照片中的太阳高度/影子判断拍摄时间和地理位置</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.opengps.cn/">
+          <img class="lozad" data-src="https://www.opengps.cn/favicon.ico">
+          <div>
+            <strong class="title">开放GPS</strong>
+            <span class="description">提供基于经纬度、WiFi BSSID、GPS的定位服务</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://www.cellocation.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">Cellocation.com</strong>
+            <span class="description">基站、WiFi定位服务</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://open.iot.10086.cn/">
+          <img class="lozad" data-src="https://open.iot.10086.cn/favicon.ico">
+          <div>
+            <strong class="title">中国移动OneNET定位</strong>
+            <span class="description">中国移动物联网平台的智能硬件位置服务</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oimulti" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>多维度情报源
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://osint.link">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">OSINT.Link</strong>
+            <span class="description">按关键词、搜索引擎、元数据、文件类型等维度组织的OSINT工具资源站</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.nationalnanpa.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">北美编号计划(NANPA)</strong>
+            <span class="description">维护北美区号(NPA)和局号(NXX)分配信息</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://raidforums.com/Announcement-Database-Index-CLICK-ME">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">RaidForums 泄露数据库索引</strong>
+            <span class="description">密码泄露数据库索引及资源互换论坛（高风险）</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oisocial" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>社交媒体情报
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/Greenwolf/social_mapper">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Social Mapper</strong>
+            <span class="description">通过人脸识别跨平台关联社交媒体账号（Facebook、LinkedIn等）（Python）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://recruitin.net/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">Recruitin</strong>
+            <span class="description">利用Google搜索LinkedIn个人资料</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/initstring/linkedin2username">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">linkedin2username</strong>
+            <span class="description">获取特定公司LinkedIn员工列表并生成可能用户名</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/0x09AL/raven">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Raven</strong>
+            <span class="description">LinkedIn信息收集工具（Linux）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/Ridter/Mailget">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">脉脉邮箱猜测</strong>
+            <span class="description">通过脉脉用户信息推测企业邮箱格式</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/sGPE-CUdTmn-p_nafhGVfg">
+          <img class="lozad" data-src="https://mp.weixin.qq.com/favicon.ico">
+          <div>
+            <strong class="title">Twitter情报工具综述</strong>
+            <span class="description">介绍Twitter相关分析工具</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/haccer/tweep">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Tweep</strong>
+            <span class="description">利用Twitter API进行信息爬取</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/MazenElzanaty/TwLocation">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">TwLocation</strong>
+            <span class="description">尝试获取Twitter用户发推的地理位置（Python）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/vaguileradiaz/tinfoleak">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Tinfoleak</strong>
+            <span class="description">Web界面，分析Twitter账户发推习惯、设备、地点等</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/5OFPK0g8qP05FMkXFU9TWQ">
+          <img class="lozad" data-src="https://mp.weixin.qq.com/favicon.ico">
+          <div>
+            <strong class="title">Facebook情报工具综述</strong>
+            <span class="description">介绍Facebook相关分析工具</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/xHak9x/fbi">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">FBI (Facebook Information)</strong>
+            <span class="description">Facebook信息收集工具（Python 2）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/needmorecowbell/sniff-paste">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Sniff-Paste</strong>
+            <span class="description">针对Pastebin的OSINT收集工具</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/martinvigo/ransombile">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Ransombile</strong>
+            <span class="description">利用社交媒体密码找回信息进行关联分析（Ruby）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.reg007.com/">
+          <img class="lozad" data-src="https://www.reg007.com/favicon.ico">
+          <div>
+            <strong class="title">REG007</strong>
+            <span class="description">查询手机号或邮箱注册的网站/APP（主要覆盖国内服务）</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oibusiness" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>企业人员信息
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://hunter.io/">
+          <img class="lozad" data-src="https://hunter.io/favicon.ico">
+          <div>
+            <strong class="title">Hunter.io</strong>
+            <span class="description">查找企业域名下邮箱地址（有免费额度）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.aihitdata.com/">
+          <img class="lozad" data-src="https://www.aihitdata.com/favicon.ico">
+          <div>
+            <strong class="title">Aihitdata</strong>
+            <span class="description">汇总全球公司信息变更，可结合天眼查/企查查使用</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/x0day/Multisearch-v2">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Multisearch-v2</strong>
+            <span class="description">聚合多个搜索引擎，发现企业敏感资产</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/vysec/MaiInt">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">MaiInt</strong>
+            <span class="description">公司雇员信息收集测试工具</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/jofpin/trape">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Trape</strong>
+            <span class="description">利用OSINT进行人员追踪定位（Python）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.truthfinder.com/">
+          <img class="lozad" data-src="/images/favicon/truthfinder.webp">
+          <div>
+            <strong class="title">TruthFinder</strong>
+            <span class="description">美国公民背景信息查询（商业服务）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://infotracer.com/">
+          <img class="lozad" data-src="/images/favicon/infotracer.png">
+          <div>
+            <strong class="title">Infotracer</strong>
+            <span class="description">通过姓名、手机、邮件地址追踪个人信息（商业服务）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/famavott/osint-scraper">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">OSINT Scraper</strong>
+            <span class="description">输入人名或邮箱，自动爬取互联网关联信息</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/n0tr00t/Sreg">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Sreg</strong>
+            <span class="description">通过邮箱、手机号、用户名查询互联网注册情况（Python）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://verify-email.org/">
+          <img class="lozad" data-src="https://verify-email.org/favicon.ico">
+          <div>
+            <strong class="title">Verify-Email</strong>
+            <span class="description">验证邮箱地址是否存在且可接收邮件</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://emailable.com/zh-cn/api/">
+          <img class="lozad" data-src="https://emailable.com/images/app-icons/favicon.ico">
+          <div>
+            <strong class="title">emailable</strong>
+            <span class="description">验证邮箱有效性（每月免费额度）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/ChrisJohnRiley/Scythe">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Scythe</strong>
+            <span class="description">验证用户名是否为常用账号</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/fireeye/GeoLogonalyzer">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">GeoLogonalyzer</strong>
+            <span class="description">分析远程身份验证日志中的地理位置，区分合法与可疑登录</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://mid.weixingmap.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">身份证查询校验</strong>
+            <span class="description">身份证信息查询（注意合规性）</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="artthreat" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>威胁情报源
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.fireeye.com/current-threats.html">
+          <img class="lozad" data-src="https://www.trellix.com/favicon.ico">
+          <div>
+            <strong class="title">FireEye Threat Intelligence</strong>
+            <span class="description">FireEye发布的当前威胁情报</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://x.threatbook.cn/">
+          <img class="lozad" data-src="https://x.threatbook.cn/favicon.ico">
+          <div>
+            <strong class="title">微步威胁情报</strong>
+            <span class="description">国内开源威胁情报平台</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://ti.qianxin.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">奇安信威胁情报</strong>
+            <span class="description">奇安信发布的威胁情报服务</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/OpenCTI-Platform/opencti">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">OpenCTI</strong>
+            <span class="description">开源网络威胁情报平台（JavaScript）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/euphrat1ca/security_w1k1/blob/master/wiki_intelligenceThreat.md">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">公开威胁情报库汇总</strong>
+            <span class="description">各类公开威胁情报库整理汇总</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/ReAbout/datacon">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">攻击源分析案例</strong>
+            <span class="description">DataCon竞赛中攻击源与攻击者分析报告</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/t4d/StalkPhish">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">StalkPhish</strong>
+            <span class="description">从多源收集钓鱼网站情报（Python）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://isc.sans.edu/api/threatlist/shodan/">
+          <img class="lozad" data-src="https://isc.sans.edu/favicon.ico">
+          <div>
+            <strong class="title">SANS ISC Shodan Scanners</strong>
+            <span class="description">SANS ISC识别的Shodan扫描器IP列表</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://avoidaclaim.com/fraud-warnings/">
+          <img class="lozad" data-src="https://avoidaclaim.com/favicon.ico">
+          <div>
+            <strong class="title">myip.ms General Blacklist</strong>
+            <span class="description">诈骗信息公示网站（原链接失效，替换为有效示例）</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oiapt" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>APT威胁情报
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://unit42.paloaltonetworks.com/">
+          <img class="lozad" data-src="https://unit42.paloaltonetworks.com/favicon.ico">
+          <div>
+            <strong class="title">Palo Alto Networks Unit 42</strong>
+            <span class="description">发布APT研究报告与IOC</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/pan-unit42/iocs">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">Unit 42 IOC Github</strong>
+            <span class="description">Palo Alto Networks Unit 42 公开的APT相关IOC</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/blackorbird/APT_REPORT">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">APT组织报告合集</strong>
+            <span class="description">收集APT组织公开报告</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/Yeti-791/APT-Guide">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">APT分析指南</strong>
+            <span class="description">APT组织分析文档资源</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/kbandla/APTnotes">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">APTnotes</strong>
+            <span class="description">收集公开的APT相关文件、报告、笔记和软件样本</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections">
+          <img class="lozad" data-src="https://github.githubassets.com/favicons/favicon.svg">
+          <div>
+            <strong class="title">APT &amp; CyberCriminal Campaign Collection</strong>
+            <span class="description">2006年以来活跃组织/团队的情报索引</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oipw" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>密码泄露查询
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://haveibeenpwned.com/">
+          <img class="lozad" data-src="https://haveibeenpwned.com/favicon.ico">
+          <div>
+            <strong class="title">Have I Been Pwned</strong>
+            <span class="description">查询邮箱是否出现在已知数据泄露事件中</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://intelx.io/">
+          <img class="lozad" data-src="https://intelx.io/favicon.ico">
+          <div>
+            <strong class="title">Intelligence X</strong>
+            <span class="description">搜索泄露数据库、暗网、文档等（含账号密码数据）</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oiverify" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>核查与验证
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://mediabugs.org/">
+          <img class="lozad" data-src="http://mediabugs.org/favicon.ico">
+          <div>
+            <strong class="title">MediaBugs</strong>
+            <span class="description">报告和追踪新闻媒体中的事实错误</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.politifact.com/">
+          <img class="lozad" data-src="https://www.politifact.com/favicon.ico">
+          <div>
+            <strong class="title">PolitiFact</strong>
+            <span class="description">对政治人物和媒体言论进行真实性评级</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.factcheck.org/scicheck/">
+          <img class="lozad" data-src="https://www.factcheck.org/favicon.ico">
+          <div>
+            <strong class="title">SciCheck (FactCheck.org)</strong>
+            <span class="description">核查科学和健康领域的虚假或误导性主张</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.snopes.com/">
+          <img class="lozad" data-src="https://www.snopes.com/favicon.ico">
+          <div>
+            <strong class="title">Snopes</strong>
+            <span class="description">核查都市传说、谣言、网络迷因、图片/视频</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oiimage" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>图像搜索
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.imageidentify.com/">
+          <img class="lozad" data-src="https://www.imageidentify.com/favicon.ico">
+          <div>
+            <strong class="title">Wolfram ImageIdentify</strong>
+            <span class="description">利用AI识别图像中的物体、场景等</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://www.opentopia.com/">
+          <img class="lozad" data-src="http://www.opentopia.com/favicon.ico">
+          <div>
+            <strong class="title">全球公共摄像头</strong>
+            <span class="description">汇总全球公共实时流网络摄像头</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oipub" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>公共记录查询
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.melissa.com/v2/lookups/propertyviewer/zipcode/">
+          <img class="lozad" data-src="https://www.melissa.com/favicon.ico">
+          <div>
+            <strong class="title">美国房产信息 (Melissa)</strong>
+            <span class="description">通过邮编查询房产公共记录信息（需具体地址）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.emporis.com/buildings">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">全球建筑数据库</strong>
+            <span class="description">搜索世界各地建筑物信息、公司和设计/建筑图像</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oisearch" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>搜索引擎
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://trends.google.com/trends/?geo=US">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">Google Trends</strong>
+            <span class="description">分析关键词搜索趋势、地域分布和相关查询</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://millionshort.com/">
+          <img class="lozad" data-src="https://millionshort.com/favicon.ico">
+          <div>
+            <strong class="title">Million Short</strong>
+            <span class="description">排除热门结果，发掘长尾信息</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oitraffic" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>交通运输情报
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.marinetraffic.com/">
+          <img class="lozad" data-src="https://www.marinetraffic.com/favicon.ico">
+          <div>
+            <strong class="title">MarineTraffic</strong>
+            <span class="description">全球船舶实时位置与航行信息 (AIS)</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://registry.faa.gov/aircraftinquiry/Aircraft_Inquiry.aspx">
+          <img class="lozad" data-src="https://registry.faa.gov/favicon.ico">
+          <div>
+            <strong class="title">FAA Aircraft Registry</strong>
+            <span class="description">查询美国联邦航空管理局注册的飞机信息</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.nicb.org/vincheck">
+          <img class="lozad" data-src="https://www.nicb.org/favicon.ico">
+          <div>
+            <strong class="title">NICB VINCheck</strong>
+            <span class="description">美国车辆识别码(VIN)查询，检查是否被盗或salvage</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="oinssa" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>态势感知
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://norsecorp.com/">
+          <img class="lozad" data-src="https://norsecorp.com/favicon.ico">
+          <div>
+            <strong class="title">Norsecorp</strong>
+            <span class="description">提供威胁情报网络可视化，展示攻击者及其目标数据（访问前确认可用性）</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="secure" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>安全
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.freebuf.com/">
+          <img class="lozad" data-src="https://www.freebuf.com/favicon.ico">
+          <div>
+            <strong class="title">FreeBuf</strong>
+            <span class="description">网络安全行业门户与社区</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.kanxue.com/">
+          <img class="lozad" data-src="/images/favicon/kanxue.ico">
+          <div>
+            <strong class="title">看雪</strong>
+            <span class="description">专注于PC|移动|智能设备安全研究及逆向工程的开发者社区</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.kanxue.com/chm.htm">
+          <img class="lozad" data-src="/images/favicon/kanxue.ico">
+          <div>
+            <strong class="title">看雪知识库</strong>
+            <span class="description">安全相关精华文章</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.pediy.com/kssd/index.html">
+          <img class="lozad" data-src="/images/favicon/pediy.ico">
+          <div>
+            <strong class="title">看雪KSSD</strong>
+            <span class="description">看雪软件安全文档库</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.hackerone.com/">
+          <img class="lozad" data-src="https://www.hackerone.com/themes/custom/hackerone/assets/favicons/favicon.svg">
+          <div>
+            <strong class="title">HackerOne</strong>
+            <span class="description">全球领先的攻击性安全解决方案提供商 | 人工智能安全 | 众包安全</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="blog" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>个人博客
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://yaolifeng.com/">
+          <img class="lozad" data-src="https://yaolifeng.com/avatar.png">
+          <div>
+            <strong class="title">姚利锋</strong>
+            <span class="description">作者关注Vue、React、TypeScript等技术</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.yuewu.dev/">
+          <img class="lozad" data-src="https://www.yuewu.dev/favicon.ico">
+          <div>
+            <strong class="title">月武</strong>
+            <span class="description">聚焦游戏开发</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://jesseschell.com/">
+          <img class="lozad" data-src="https://jesseschell.com/favicon.ico">
+          <div>
+            <strong class="title">Jesse Schell</strong>
+            <span class="description"></span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.bmpi.dev/">
+          <img class="lozad" data-src="https://www.bmpi.dev/images/ico/favicon-32x32.png">
+          <div>
+            <strong class="title">马大卫</strong>
+            <span class="description">全栈开发及ETF投资组合管理与长期目标</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://maoxuan.wang/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">毛选</strong>
+            <span class="description">专注于《毛泽东选集》学习、应用与宣传的网站</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://vikingz.me/">
+          <img class="lozad" data-src="https://vikingz.me/favicon.svg">
+          <div>
+            <strong class="title">Viking个人网站</strong>
+            <span class="description">全栈开发工程师代表作品（TailwindResume、简单简历等AI简历生成工具）</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://www.huanggaole.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">黄高乐</strong>
+            <span class="description">独立游戏开发者黄高乐的个人网站</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://simondev.io/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">SimonDev.io</strong>
+            <span class="description">由资深行业人士（AAA级图形程序员、前Google工程师）创建的技术学习平台</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://immersivemath.com/ila/index.html">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">沉浸式数学</strong>
+            <span class="description">沉浸式线性代数</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.jeremykun.com/">
+          <img class="lozad" data-src="https://www.jeremykun.com/favicon.ico">
+          <div>
+            <strong class="title">Jeremykun</strong>
+            <span class="description">数学与编程主题的个人博客</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://www.aisharing.com/">
+          <img class="lozad" data-src="/images/favicon/aisharing.png">
+          <div>
+            <strong class="title">aisharing</strong>
+            <span class="description">游戏AI程序员博客，分享游戏AI相关的知识</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://digestingduck.blogspot.com/">
+          <img class="lozad" data-src="/images/favicon/blogspot.ico">
+          <div>
+            <strong class="title">Digesting Duck</strong>
+            <span class="description">NavMesh库作者博客</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.redblobgames.com/">
+          <img class="lozad" data-src="https://www.redblobgames.com/favicon.ico">
+          <div>
+            <strong class="title">Red Blob Games</strong>
+            <span class="description">是一个专注于游戏开发算法和交互式数学概念教程的个人网站</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.roxlu.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">roxlu</strong>
+            <span class="description">Diederick Huijbers 运营的个人网站，关注创意编程、C++ 开发、实时图形渲染和开源项目</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://vfxmike.blogspot.com/">
+          <img class="lozad" data-src="/images/favicon/blogspot.ico">
+          <div>
+            <strong class="title">VFX Mike</strong>
+            <span class="description">由视觉特效 (VFX) 行业专家 Mike Seymour 运营的个人博客，专注于 VFX 新闻、技术分析和深度评测</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://iquilezles.org/">
+          <img class="lozad" data-src="https://iquilezles.org/favicon.png">
+          <div>
+            <strong class="title">Inigo Quilez </strong>
+            <span class="description">西班牙程序员兼数字艺术家 Inigo Quilez 的个人网站，也是计算机图形学领域，特别是实时渲染和着色器编程方面的重要资源</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="http://www-cs-students.stanford.edu/~amitp/gameprog.html">
+          <img class="lozad" data-src="https://theory.stanford.edu/~amitp/favicon.ico">
+          <div>
+            <strong class="title">GameProgramming</strong>
+            <span class="description">游戏开发相关文章</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://qiao.github.io/PathFinding.js/visual/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">PathFinding</strong>
+            <span class="description">寻路算法模拟</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://textbooks.math.gatech.edu/ila/index.html">
+          <img class="lozad" data-src="https://textbooks.math.gatech.edu/ila/static/images/gatech.gif">
+          <div>
+            <strong class="title">交互线性代数</strong>
+            <span class="description">交互线性代数</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.scratchapixel.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">图形学课程 </strong>
+            <span class="description">从零开始免费学习计算机图形学。</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://thesecretlivesofdata.com/raft/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">Raft</strong>
+            <span class="description">Raft在线模拟</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.xqbase.com/computer.htm">
+          <img class="lozad" data-src="https://www.xqbase.com/favicon.ico">
+          <div>
+            <strong class="title">计算机博弈</strong>
+            <span class="description">计算机博弈相关文章</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://simonschreibt.de/game-art-tricks/">
+          <img class="lozad" data-src="https://simonschreibt.de/wp-content/uploads/2013/09/blog_icon_fav1.gif">
+          <div>
+            <strong class="title">Game Art Tricks</strong>
+            <span class="description">游戏艺术相关文章</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://coq-zh.github.io/SF-zh/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">软件基础</strong>
+            <span class="description">《软件基础》系列书籍广泛地介绍了可靠软件的数学基础。</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  <h4 id="video" class="anchor-tag">
+    <svg class="icon">
+      <use xlink:href="#svg-tag"/>
+    </svg>放松一下
+  </h4>
+  <div class="group">
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.iqiyi.com/">
+          <img class="lozad" data-src="https://www.iqiyi.com/favicon.ico">
+          <div>
+            <strong class="title">爱奇艺</strong>
+            <span class="description">国内主流视频平台，提供影视、综艺、动漫等视频内容，支持会员与付费点播</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.youku.com/">
+          <img class="lozad" data-src="https://www.youku.com/favicon.ico">
+          <div>
+            <strong class="title">优酷</strong>
+            <span class="description">阿里旗下视频平台，涵盖影视、综艺、纪录片等内容，拥有丰富的版权资源</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.mgtv.com/">
+          <img class="lozad" data-src="https://www.mgtv.com/favicon.ico">
+          <div>
+            <strong class="title">芒果TV</strong>
+            <span class="description">湖南广电旗下视频平台，以综艺、自制剧为特色，内容年轻化</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://v.qq.com/">
+          <img class="lozad" data-src="https://v.qq.com/favicon.ico">
+          <div>
+            <strong class="title">腾讯视频</strong>
+            <span class="description">腾讯旗下视频平台，拥有海量影视、综艺、动漫资源，支持多终端观看</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://tv.cctv.com/">
+          <img class="lozad" data-src="https://tv.cctv.com/favicon.ico">
+          <div>
+            <strong class="title">央视频</strong>
+            <span class="description">央视旗下视频平台，提供央视节目直播与点播，涵盖新闻、影视、体育等内容</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.bilibili.com/">
+          <img class="lozad" data-src="https://www.bilibili.com/favicon.ico">
+          <div>
+            <strong class="title">B站</strong>
+            <span class="description">年轻群体聚集的视频平台，以动漫、游戏、生活类内容为主，支持用户创作与互动</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.youtube.com/">
+          <img class="lozad" data-src="/images/logo.png">
+          <div>
+            <strong class="title">Y站</strong>
+            <span class="description">youtube</span>
+          </div>
+        </a>
+      </div>
+    
+      <div class="card">
+        <a target="_blank" rel="noopener" href="https://www.douyu.com/">
+          <img class="lozad" data-src="https://www.douyu.com/favicon.ico">
+          <div>
+            <strong class="title">斗鱼</strong>
+            <span class="description">斗鱼</span>
+          </div>
+        </a>
+      </div>
+    
+  </div>
+
+  
+</main>
+    
+
+<footer class="flex-v-center">
+  <p>
+    © 2025 我的个人书签
+  </p>
+</footer>
+
+  </div>
+
+  
+
+  <div id="go-top">
+    <i class="far fa-arrow-alt-circle-up"></i>
+  </div>
+
+  <div id="js-area">
+  
+<script src="/js/lozad.min.js"></script>
+
+</div>
+</body>
+
+</html>
