@@ -77,7 +77,10 @@ function switchTheme(name) {
   }
 
   const isDark = name == 'dark';
+  document.documentElement.classList.toggle('light', !isDark);
   document.documentElement.classList.toggle('dark', isDark);
+  document.body.classList.toggle('light', !isDark);
   document.body.classList.toggle('dark', isDark);
   document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+  document.documentElement.style.backgroundColor = isDark ? '#222' : '#f9f9f9';
 }
