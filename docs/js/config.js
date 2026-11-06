@@ -34,9 +34,18 @@ const $ = (css, d = document) => d.querySelector(css);
 // 与@media screen中一致
 var isMobile = window.innerWidth <= 500;
 
-!isMobile && document.body.classList.toggle('sidebar-collapsed', config.sidebarCollapsed);
+function applyInitialTheme() {
+  if (!document.body) return;
 
-switchTheme(config.themeColor);
+  !isMobile && document.body.classList.toggle('sidebar-collapsed', config.sidebarCollapsed);
+  switchTheme(config.themeColor);
+}
+
+if (document.body) {
+  applyInitialTheme();
+} else {
+  document.addEventListener('DOMContentLoaded', applyInitialTheme, { once: true });
+}
 
 // 禁止缩放
 document.addEventListener('touchstart', function(event) {
